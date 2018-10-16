@@ -1,0 +1,138 @@
+body {
+	background-color: black;
+	font-family: "dancing script";
+}
+.slider {
+	animation: animacion 1.25s;
+}
+.trazo img {border: 0px;}
+.trazo1 img {border: 0px;}
+h1 {
+	padding: 10px;
+	background-color: #5b7989;
+	color: white;
+	text-shadow: 2px 2px 3px #02010a;
+	border-radius: 10px 10px 0px 0px;
+	margin-bottom: auto;
+}
+
+div {
+	margin:auto;
+	width: 900px;
+	}
+.inicio {
+	text-decoration: none;
+}
+a  {
+	color: white;
+	font-size: 20px;
+	padding: 10px;
+	}
+
+#menu {
+	float: right;	
+}
+#contenedor1 {
+	background-color: #82c3a6;
+			}
+
+.imagen1 {
+	display: block;
+	margin:auto;
+	padding: 25px;
+	filter:drop-shadow(2px 2px #02010a);
+	}
+
+#contenedor2 {
+	font-size: 25px;
+	text-decoration: underline;
+	background-color:#d5c75f;
+	text-align: center;
+	display: flex;
+	} 
+#contenedor2 img{
+	transition-property: border;
+	transition-duration: 0.5s;
+	transition: 1s;
+	}
+
+.imagen2{
+	border: 1px solid;
+	filter:drop-shadow(2px 2px #02010a);
+}
+.imagen2:hover {
+	transform: rotate(5deg);
+	transition-duration: 1S;
+	border: 2px solid black;
+	filter: drop-shadow(5px 5px 5px #82c3a6);
+}
+.imagen3{
+	border: 1px solid;
+	filter:drop-shadow(2px 2px #02010a);
+}
+.imagen3:hover {
+	transform: translate(10px, -5px);
+	border: 2px solid black;
+	filter: drop-shadow(5px 5px 5px #82c3a6);
+}
+
+#footer-conatiner {
+	color: black;
+	background-color:  #C6d5c5;
+	border-radius: 0px 0px 10px 10px;
+	display:flex;
+	}
+
+
+.title {
+	font-size: 1.5em;
+	display:flex;
+}
+
+.columnas {
+	list-style:none;
+	margin: 10px;
+	
+	}
+.columnas li p {
+	display: inline;
+
+}
+
+@keyframes animacion {
+0% {margin-top: 150%;}
+60% {margin-top: -5%;}
+100% {margin-top: 0%;}
+}
+
+@media (max-width: 420px) {
+	
+	body {width: 90%;
+		margin: 0 auto;
+	}
+
+	h1 {
+		text-align: center;
+		display: block;
+		padding: 20px;
+					}
+
+	#menu {
+		display: block;
+		text-align: center;
+		float: none;
+		}
+	
+
+	div {width: 100%;
+		
+}
+	#contenedor2 {
+		display: inline-block;
+		text-align: center;
+			}
+	
+	#footer-conatiner {
+		display: inline-block;
+			}
+}
